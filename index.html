@@ -15,70 +15,55 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid mt-5">
         <div class="row">
             <!--Left Sidebar-->
-            <section id="left_sidebar" class="col-3 show" style="display: none;">
+            <section id="left_sidebar" class="col-12 col-md-3 d_show" style="display: none;">
 
                 <div class="row">
                     <div class="col">
-                        <ul>
-                            <li>
-                                <a href="#">Pet</a>
+                        <div class="row">
+                            <div class="col mb-3">
+                                <input type="search" name="" class="form-control float-left" id=""
+                                    style="max-width: 200px;">
+
+                                <a href="#" onclick="closebtn()" class="d-block d-md-none" id="clsbtn"><i class="text-dark fas fa-times fa-lg float-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
                                 <ul>
                                     <li>
-                                        <a href="#">Add a new pet to store</a>
+                                        <a href="#">Pet</a>
                                         <ul>
                                             <li>
-                                                <a href="#">Parameters</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Response</a>
+                                                <a href="#">Add a new pet to store</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Parameters</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Response</a>
+                                                    </li>
+                                                </ul>
                                             </li>
                                         </ul>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <a href="#">Update an existing pet</a>
                                         <ul>
                                             <li>
-                                                <a href="#">Parameters</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Response</a>
+                                                <a href="#">Update an existing pet</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Parameters</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Response</a>
+                                                    </li>
+                                                </ul>
                                             </li>
                                         </ul>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <a href="#">Finds pets by status</a>
                                         <ul>
                                             <li>
-                                                <a href="#">Parameters</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Response</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Response Schema</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <a href="#">Finds pets by tags</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Parameters</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Response</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Response Schema</a>
+                                                <a href="#">Finds pets by status</a>
                                                 <ul>
                                                     <li>
                                                         <a href="#">Parameters</a>
@@ -92,16 +77,43 @@
                                                 </ul>
                                             </li>
                                         </ul>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Finds pets by tags</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Parameters</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Response</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Response Schema</a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Parameters</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Response</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Response Schema</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!--Main Page-->
-            <section id="main_page" class="col-9 col-md-9">
+            <section id="main_page" class="col-9 col-md-6">
                 <a href="#" id="bar_btn" onclick="barBtnClick()"><i
                         class="text-dark fas fa-bars fa-lg py-2 p-1"></i></a>
 
@@ -182,8 +194,6 @@
                                             }
                                         }
                                     }
-                                    
-                                    
                                 </code>
                             </div>
                         </div>
@@ -203,7 +213,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="js/base.js"></script>
-
 
 </body>
 

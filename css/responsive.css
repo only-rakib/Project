@@ -9,7 +9,7 @@
         width: 10px;
         /* same as padding-left set on li */
         font-weight: 900;
-      }
+    }
     #left_sidebar ul li ul li:before {
         content: "\f105";
         /* FontAwesome Unicode */
@@ -20,6 +20,5 @@
         width: 10px;
         /* same as padding-left set on li */
         font-weight: 900;
-      }
-    
-  }
+    }
+}
