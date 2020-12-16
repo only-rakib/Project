@@ -4,107 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 
 
 </head>
 
 <body>
+
     <div class="container-fluid">
-        <div class="row">
-            <!--Left Sidebar-->
-            <section id="left_sidebar" class="col-3 show" style="display: none;">
-
-                <div class="row">
-                    <div class="col">
-                        <ul>
-                            <li>
-                                <a href="#">Pet</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Add a new pet to store</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Parameters</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Response</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <a href="#">Update an existing pet</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Parameters</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Response</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <a href="#">Finds pets by status</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Parameters</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Response</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Response Schema</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <a href="#">Finds pets by tags</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Parameters</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Response</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Response Schema</a>
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Parameters</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Response</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Response Schema</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+        <div class="row d-flex d-md-block flex-nowrap wrapper">
+            <!--Left Sidebar Start-->
+            <div class="col-md-3 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+                <div class="list-group border-0 text-center text-md-left">
+                    <form class="form-inline list-group-item d-inline-block collapsed">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        
+                      </form>
+                    <a href="#" class="list-group-item d-inline-block collapsed"><i class="fa fa-film"></i> <span
+                            class="d-none d-md-inline">Item 2</span></a>
+                    <a href="#menu3" class="list-group-item d-inline-block collapsed" data-toggle="collapse"
+                        aria-expanded="false"><i class="fa fa-book"></i> <span class="d-none d-md-inline">Item 3
+                        </span></a>
+                    <div class="collapse" id="menu3" data-parent="#sidebar">
+                        <a href="#" class="list-group-item" data-parent="#menu3">3.1</a>
+                        <a href="#menu3sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">3.2
+                        </a>
+                        <div class="collapse" id="menu3sub2">
+                            <a href="#" class="list-group-item" data-parent="#menu3sub2">3.2 a</a>
+                            <a href="#" class="list-group-item" data-parent="#menu3sub2">3.2 b</a>
+                            <a href="#" class="list-group-item" data-parent="#menu3sub2">3.2 c</a>
+                        </div>
+                        <a href="#" class="list-group-item" data-parent="#menu3">3.3</a>
                     </div>
+
                 </div>
-            </section>
-
-            <!--Main Page-->
-            <section id="main_page" class="col-9 col-md-9">
-                <a href="#" id="bar_btn" onclick="barBtnClick()"><i
-                        class="text-dark fas fa-bars fa-lg py-2 p-1"></i></a>
-
+            </div>
+            <!--Left Sidebar End-->
+            <!--Main Page Start-->
+            <main class="col-9 col-md-6 float-left  px-5 pl-md-2 pt-2 main">
+                <a href="#" data-target="#sidebar" data-toggle="collapse"><i
+                        class="text-dark fa fa-navicon fa-lg py-2 p-1"></i></a>
+                
                 <div class="row">
                     <div class="col">
                         <h3 class="heading">Introduction</h3>
@@ -125,13 +70,14 @@
                         </p>
                     </div>
                 </div>
-            </section>
 
-            <!--Right Sidebar-->
-            <section id="right_sidebar" class="col-12 col-md-3">
+            </main>
+            <!--Main Page End-->
+            <!--Right Sidebar Start-->
+            <div class="col-12 col-md-3 float-left  pl-0 pr-0" id="sidebarRight">
                 <div class="row">
                     <div class="col">
-                        <h3 class="heading">Response Sample</h3>
+                       <h3 class="heading">Response Sample</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -179,10 +125,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -192,9 +137,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="js/base.js"></script>
-
-
 </body>
 
 </html>
