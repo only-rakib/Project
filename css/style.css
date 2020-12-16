@@ -2,10 +2,9 @@
   overflow: hidden;
   z-index: 3;
   transition: 0.5s;
-
 }
-#left_sidebar.overflow_control
-{
+
+#left_sidebar.overflow_control {
   overflow-x: auto !important;
 }
 
@@ -28,6 +27,7 @@
   /* same as padding-left set on li */
   font-weight: 900;
 }
+
 #left_sidebar ul li ul li:before {
   content: "\f105";
   /* FontAwesome Unicode */
@@ -38,4 +38,13 @@
   width: 1.3em;
   /* same as padding-left set on li */
   font-weight: 900;
+}
+
+.block-code {
+  background-color: #c6f7f8;
+  color: #021688;
+  padding: .5em 1em;
+  overflow: auto;
+  word-wrap: normal;
+  width: max-content;
 }
