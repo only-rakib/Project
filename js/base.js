@@ -42,3 +42,30 @@ $("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
     //https://codepen.io/tutsplus/pen/GPzbPX
 });
 
+data=`{
+  "glossary": {
+      "title": "example glossary",
+      "GlossDiv": {
+          "title": "S",
+          "GlossList": {
+              "GlossEntry": {
+                  "ID": "SGML",
+                  "SortAs": "SGML",
+                  "GlossTerm": "Standard Generalized Markup Language",
+                  "Acronym": "SGML",
+                  "Abbrev": "ISO 8879:1986",
+                  "GlossDef": {
+                      "para": "A meta-markup language, used to create markup languages such as DocBook.",
+                      "GlossSeeAlso": ["GML", "XML"]
+                  },
+                  "GlossSee": "markup"
+              }
+          }
+      }
+  }
+}`;
+
+var jsonViewer = new JSONViewer();
+document.querySelector("#json").appendChild(jsonViewer.getContainer());
+jsonViewer.showJSON(data,1,1);
+//https://www.cssscript.com/minimal-json-data-formatter-jsonviewer/

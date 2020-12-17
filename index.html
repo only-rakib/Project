@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/json-viewer.css">
 
 
 </head>
@@ -25,15 +26,12 @@
                         <div class="row">
                             <div class="col mb-3">
                                 <a href="#" onclick="closebtn()" class="d-block d-md-none" id="clsbtn"><i
-                                    class="text-dark fas fa-times fa-lg float-right mb-3"></i></a>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
-                                    <div class="input-group-append">
-                                      <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
-                                    </div>
-                                  </div>
-
-                               
+                                        class="text-dark fas fa-times fa-lg float-right mb-3"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-3">
+                                <input type="text" class="form-control" placeholder="Search">
                             </div>
                         </div>
                         <div class="row">
@@ -182,43 +180,17 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button type="button" class="btn btn-primary">Primary</button>
-                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn white-green">200</button>
+                        <button type="button" class="btn">401</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
+                        
                         <div class="row">
-                            <div class="col">
-                                Content Type
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <code>
-                                    {
-                                        "glossary": {
-                                            "title": "example glossary",
-                                            "GlossDiv": {
-                                                "title": "S",
-                                                "GlossList": {
-                                                    "GlossEntry": {
-                                                        "ID": "SGML",
-                                                        "SortAs": "SGML",
-                                                        "GlossTerm": "Standard Generalized Markup Language",
-                                                        "Acronym": "SGML",
-                                                        "Abbrev": "ISO 8879:1986",
-                                                        "GlossDef": {
-                                                            "para": "A meta-markup language, used to create markup languages such as DocBook.",
-                                                            "GlossSeeAlso": ["GML", "XML"]
-                                                        },
-                                                        "GlossSee": "markup"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                </code>
+                            <div class="col mt-3" id="json">
+
+
                             </div>
                         </div>
                     </div>
@@ -236,7 +208,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="js/json-viewer.js"></script>
     <script src="js/base.js"></script>
+
 
 </body>
 
