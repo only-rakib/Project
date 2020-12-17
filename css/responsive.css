@@ -26,7 +26,13 @@
 @media only screen and (max-width: 768px) {
     #main_page {
         border-left: none;
-        
+        border-top: 1px solid #ccc;
         /*height: 100%;*/
+    }
+    .toggole_icon {
+        position: absolute;
+        margin-top: -1.9rem;
+        top: 0.97rem;
+        left:50%;
     }
 }

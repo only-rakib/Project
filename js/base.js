@@ -19,15 +19,19 @@ function barBtnClick() {
     $("#bar_btn").hide();
     $("#left_sidebar").toggleClass("d_show");
     $("#left_sidebar").toggleClass("overflow_control");
+    $("#side_icon").toggleClass("fa-arrow-circle-down");
   }
 }
 function closebtn() {
   $("#bar_btn").show();
   $("#left_sidebar").toggleClass("d_show");
   $("#left_sidebar").toggleClass("overflow_control");
+  $("#side_icon").toggleClass("fa-arrow-circle-down");
 }
 
 if(screen.width<768)
 {
     $("#left_sidebar").removeClass("d_show");
+    $("#side_icon").removeClass("fa-arrow-circle-left fa-arrow-circle-right");
+    $("#side_icon").addClass("fa-arrow-circle-down");
 }
