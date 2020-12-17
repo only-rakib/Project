@@ -34,15 +34,17 @@ if (screen.width < 768) {
   $("#side_icon").removeClass("fa-arrow-circle-left fa-arrow-circle-right");
   $("#side_icon").addClass("fa-arrow-circle-down");
 }
-$("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
-  $(e.target)
-    .prev()
-    .find("i:last-child")
-    .toggleClass("fa-minus fa-plus");
-    //https://codepen.io/tutsplus/pen/GPzbPX
+$("#accordion").on("hide.bs.collapse show.bs.collapse", (e) => {
+  $(e.target).prev().find("i:last-child").toggleClass("fa-minus fa-plus");
+  //https://codepen.io/tutsplus/pen/GPzbPX
 });
 
-data=`{
+$(".list-group-item").on("click", function () {
+  $(".icons", this).toggleClass("fa-chevron-right fa-chevron-down");
+});
+//https://stackoverflow.com/questions/29063244/consistent-styling-for-nested-lists-with-bootstrap/33571268#33571268
+
+data = `{
   "glossary": {
       "title": "example glossary",
       "GlossDiv": {
@@ -67,5 +69,16 @@ data=`{
 
 var jsonViewer = new JSONViewer();
 document.querySelector("#json").appendChild(jsonViewer.getContainer());
-jsonViewer.showJSON(data,1,1);
+jsonViewer.showJSON(data, 1, 1);
 //https://www.cssscript.com/minimal-json-data-formatter-jsonviewer/
+
+var c = $(".list-group-root").find(".list-group").length;
+var value=15;
+var ss = ".list-group.list-group-root >";
+for (i = 1; i <= c; i++) {
+  ss += ".list-group >";
+  value+=15;
+  $("style").append(ss + ".list-group-item{padding-left:"+value.toString()+"px;}");
+
+  console.log(ss + ".list-group-item");
+}

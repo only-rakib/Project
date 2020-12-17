@@ -66,9 +66,18 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
   margin-left: -1.9rem;
   top:50%;
 }
-
+.btn.white-green
+{
+  background-color: #fff;
+  color: green;
+}
+#right_sidebar
+{
+  background: #F3F6F8;
+  padding: 1rem;
+}
 /******************/
-
+/*
 .myaccordion {
  
   box-shadow: 0 0 1px rgba(0,0,0,0.1);
@@ -114,13 +123,45 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 {
   padding-top: 0px;
 }
-.btn.white-green
-{
-  background-color: #fff;
-  color: green;
+
+*/
+/*****************/
+
+.list-group.list-group-root {
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
-#right_sidebar
-{
-  background: #F3F6F8;
-  padding: 1rem;
+
+.list-group.list-group-root .list-group {
+  margin-bottom: 0;
+}
+
+.list-group.list-group-root .list-group-item {
+  border-radius: 0;
+  border-width: 1px 0 0 0;
+}
+
+.list-group.list-group-root > .list-group-item:first-child {
+  border-top-width: 0;
+}
+/*
+.list-group.list-group-root > .list-group > .list-group-item {
+  padding-left: 30px;
+}
+
+.list-group.list-group-root > .list-group > .list-group > .list-group-item {
+  padding-left: 45px;
+}
+.list-group.list-group-root > .list-group > .list-group > .list-group > .list-group-item {
+  padding-left: 60px;
+}
+*/
+
+.list-group-item .icons {
+  margin-right: 5px;
+}
+.collapse {
+  display: none;
+ 
 }
