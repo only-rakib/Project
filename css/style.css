@@ -2,7 +2,9 @@
   overflow: hidden;
   z-index: 3;
   transition: 0.5s;
+  margin-right: 1px solid #ccc;
 }
+
 
 #left_sidebar.overflow_control {
   overflow-x: auto !important;
@@ -47,4 +49,17 @@
   overflow: auto;
   word-wrap: normal;
   width: max-content;
+}
+
+#main_page
+{
+  border-left: 1px solid #ccc;
+  margin-left: 1rem;
+  /*height: 100%;*/
+}
+.toggole_icon
+{
+  position: absolute;
+  margin-left: -1.9rem;
+  top:50%;
 }

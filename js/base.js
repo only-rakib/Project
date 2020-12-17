@@ -4,13 +4,14 @@ function barBtnClick() {
   if (x >= 768) {
     $("#left_sidebar").toggleClass("d_show");
     $("#left_sidebar").toggleClass("overflow_control");
+    $("#side_icon").toggleClass("fa-arrow-circle-left fa-arrow-circle-right");
     if ($("#left_sidebar").hasClass("d_show")) {
       //If showing leftbar
-      $("#main_page").removeClass("col-md-9");
-      $("#main_page").addClass("col-md-6");
+      $("#main_page").removeClass("col-md-8");
+      $("#main_page").addClass("col-md-5");
     } else {
-      $("#main_page").removeClass("col-md-6");
-      $("#main_page").addClass("col-md-9");
+      $("#main_page").removeClass("col-md-5");
+      $("#main_page").addClass("col-md-8");
     }
     $("#clsbtn").hide();
   } else {
