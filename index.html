@@ -27,97 +27,115 @@
                                 <input type="search" name="" class="form-control float-left" id=""
                                     style="max-width: 200px;">
 
-                                <a href="#" onclick="closebtn()" class="d-block d-md-none" id="clsbtn"><i class="text-dark fas fa-times fa-lg float-right"></i></a>
+                                <a href="#" onclick="closebtn()" class="d-block d-md-none" id="clsbtn"><i
+                                        class="text-dark fas fa-times fa-lg float-right"></i></a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <ul>
-                                    <li>
-                                        <a href="#">Pet</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Add a new pet to store</a>
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Parameters</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Response</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Update an existing pet</a>
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Parameters</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Response</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Finds pets by status</a>
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Parameters</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Response</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Response Schema</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Finds pets by tags</a>
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Parameters</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Response</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Response Schema</a>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="#">Parameters</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">Response</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">Response Schema</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                                <div id="accordion" class="myaccordion">
+                                    <!--First item-->
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0">
+                                                <button
+                                                    class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+                                                    data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="false" aria-controls="collapseOne">
+                                                    Pets
+                                                    <span class="fa-stack fa-sm">
+                                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                                        <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                                    </span>
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <!--First Collapse-->
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                                            <!--First Child-->
+                                            <div class="card-header" id="headingOne">
+                                                <h2 class="mb-0">
+                                                    <button
+                                                        class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+                                                        data-toggle="collapse" data-target="#nestedcollapseOne"
+                                                        aria-expanded="false" aria-controls="nestedcollapseOne">
+                                                        Add a new pet to the store
+                                                        <span class="fa-stack fa-sm">
+                                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <!--First Child Leaf Nodes-->
+                                            <div id="nestedcollapseOne" class="collapse"
+                                                aria-labelledby="nestedheadingOne">
+                                                <div class="card-body">
+                                                    <ul>
+                                                        <li><a href="#">Parameters</a></li>
+                                                        <li><a href="#">Responses</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--Second Child-->
+                                            <div class="card-header" id="headingOne">
+                                                <h2 class="mb-0">
+                                                    <button
+                                                        class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+                                                        data-toggle="collapse" data-target="#nestedcollapseTwo"
+                                                        aria-expanded="false" aria-controls="nestedcollapseTwo">
+                                                        Update an existing pet
+                                                        <span class="fa-stack fa-sm">
+                                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                                        </span>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <!--Second Child As Root-->
+                                            <div id="nestedcollapseTwo" class="collapse"
+                                                aria-labelledby="nestedheadingTwo">
+                                                <!--Second>first child-->
+                                                <div class="card-header" id="headingOne">
+                                                    <h2 class="mb-0">
+                                                        <button
+                                                            class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+                                                            data-toggle="collapse" data-target="#nestedcollapseTwoOne"
+                                                            aria-expanded="false" aria-controls="nestedcollapseTwoOne">
+                                                            Extra
+                                                            <span class="fa-stack fa-sm">
+                                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                                <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                                            </span>
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                                <!--Second>first child>leaf-->
+                                                <div id="nestedcollapseTwoOne" class="collapse"
+                                                aria-labelledby="nestedheadingTwoOne">
+                                                <div class="card-body">
+                                                    <ul>
+                                                        <li><a href="#">Parameters</a></li>
+                                                        <li><a href="#">Responses</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
 
             <!--Main Page-->
             <section id="main_page" class="col-12 col-md-5">
-                
-                <a href="#" id="bar_btn"  onclick="barBtnClick()" class="toggole_icon"><i id="side_icon"
-                        class="fas fa-arrow-circle-left fa-lg py-2 p-1" style="color: rgb(23, 23, 191);z-index: 11;border-color: blue;"></i></a>
-                        
+
+                <a href="#" id="bar_btn" onclick="barBtnClick()" class="toggole_icon"><i id="side_icon"
+                        class="fas fa-arrow-circle-left fa-lg py-2 p-1" style="color: #004987;z-index: 11;"></i></a>
+
                 <div class="row">
                     <div class="col">
                         <h3 class="heading">Introduction</h3>

@@ -1,27 +1,3 @@
-@media only screen and (max-width: 955px) {
-    #left_sidebar ul li:before {
-        content: "\f101";
-        /* FontAwesome Unicode */
-        font-family: 'Font Awesome 5 Free';
-        display: inline-block;
-        margin-left: -2.3em;
-        /* same as padding-left set on li */
-        width: 10px;
-        /* same as padding-left set on li */
-        font-weight: 900;
-    }
-    #left_sidebar ul li ul li:before {
-        content: "\f105";
-        /* FontAwesome Unicode */
-        font-family: 'Font Awesome 5 Free';
-        display: inline-block;
-        margin-left: -4.3em;
-        /* same as padding-left set on li */
-        width: 10px;
-        /* same as padding-left set on li */
-        font-weight: 900;
-    }
-}
 
 @media only screen and (max-width: 768px) {
     #main_page {

@@ -29,9 +29,16 @@ function closebtn() {
   $("#side_icon").toggleClass("fa-arrow-circle-down");
 }
 
-if(screen.width<768)
-{
-    $("#left_sidebar").removeClass("d_show");
-    $("#side_icon").removeClass("fa-arrow-circle-left fa-arrow-circle-right");
-    $("#side_icon").addClass("fa-arrow-circle-down");
+if (screen.width < 768) {
+  $("#left_sidebar").removeClass("d_show");
+  $("#side_icon").removeClass("fa-arrow-circle-left fa-arrow-circle-right");
+  $("#side_icon").addClass("fa-arrow-circle-down");
 }
+$("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
+  $(e.target)
+    .prev()
+    .find("i:last-child")
+    .toggleClass("fa-minus fa-plus");
+    //https://codepen.io/tutsplus/pen/GPzbPX
+});
+
