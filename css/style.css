@@ -67,13 +67,14 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 {
   padding-left: 1rem;
   border-left: 1px solid #ccc;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 }
 .toggole_icon
 {
   position: absolute;
   margin-left: -1.6rem;
-  top:50%;
+  top:50vh;
 }
 .btn.white-green
 {
@@ -92,7 +93,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 
 #right_sidebar
 {
-  height: 100vh;
+  min-height: 100vh;
   padding: 1rem;
 }
 
