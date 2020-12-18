@@ -72,7 +72,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 }
 .toggole_icon
 {
-  position: absolute;
+  position: fixed;
   margin-left: -1.6rem;
   top:50vh;
 }
