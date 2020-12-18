@@ -92,7 +92,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 
 #right_sidebar
 {
-  background: #F3F6F8;
+  height: 100vh;
   padding: 1rem;
 }
 
@@ -116,18 +116,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 .list-group.list-group-root > .list-group-item:first-child {
   border-top-width: 0;
 }
-/*
-.list-group.list-group-root > .list-group > .list-group-item {
-  padding-left: 30px;
-}
 
-.list-group.list-group-root > .list-group > .list-group > .list-group-item {
-  padding-left: 45px;
-}
-.list-group.list-group-root > .list-group > .list-group > .list-group > .list-group-item {
-  padding-left: 60px;
-}
-*/
 
 .list-group-item .icons {
   margin-right: 5px;
@@ -135,4 +124,8 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 .collapse {
   display: none;
  
+}
+.formatter
+{
+  background: #F3F6F8;
 }
