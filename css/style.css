@@ -70,62 +70,24 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 {
   background-color: #fff;
   color: green;
+  border-radius: 5px;
+  border:1px solid #ccc;
 }
+.btn.black-red
+{
+  background-color: rgb(121, 119, 119);
+  color: rgb(206, 9, 9);
+  border-radius: 5px;
+  border:1px solid #fff;
+}
+
 #right_sidebar
 {
   background: #F3F6F8;
   padding: 1rem;
 }
-/******************/
-/*
-.myaccordion {
- 
-  box-shadow: 0 0 1px rgba(0,0,0,0.1);
-}
 
-.myaccordion .card,
-.myaccordion .card:last-child .card-header {
-  border: none;
-}
-
-.myaccordion .card-header {
-  border-bottom-color: #EDEFF0;
-  background: transparent;
-}
-
-.myaccordion .fa-stack {
-  font-size: 14px;
-}
-
-.myaccordion .btn {
-  width: 100%;
-  font-weight: 600;
-  color: #004987;
-  padding: 0;
-}
-
-.myaccordion .btn-link:hover,
-.myaccordion .btn-link:focus {
-  text-decoration: none;
-}
-
-.collapse>*
-{
-  margin-left: 1rem;
-  border: none;
-}
-.card-body
-{
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-.card-header
-{
-  padding-top: 0px;
-}
-
-*/
-/*****************/
+/*******Left Sidebar collapse**********/
 
 .list-group.list-group-root {
   padding: 0;

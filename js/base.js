@@ -22,6 +22,7 @@ function barBtnClick() {
     $("#side_icon").toggleClass("fa-arrow-circle-down");
   }
 }
+/**Mobile view Close button click */
 function closebtn() {
   $("#bar_btn").show();
   $("#left_sidebar").toggleClass("d_show");
@@ -34,16 +35,14 @@ if (screen.width < 768) {
   $("#side_icon").removeClass("fa-arrow-circle-left fa-arrow-circle-right");
   $("#side_icon").addClass("fa-arrow-circle-down");
 }
-$("#accordion").on("hide.bs.collapse show.bs.collapse", (e) => {
-  $(e.target).prev().find("i:last-child").toggleClass("fa-minus fa-plus");
-  //https://codepen.io/tutsplus/pen/GPzbPX
-});
 
+/**Change Leftside menu icons */
 $(".list-group-item").on("click", function () {
   $(".icons", this).toggleClass("fa-chevron-right fa-chevron-down");
 });
-//https://stackoverflow.com/questions/29063244/consistent-styling-for-nested-lists-with-bootstrap/33571268#33571268
 
+
+/**Show Json data */
 data = `{
   "glossary": {
       "title": "example glossary",
@@ -72,6 +71,9 @@ document.querySelector("#json").appendChild(jsonViewer.getContainer());
 jsonViewer.showJSON(data, 1, 1);
 //https://www.cssscript.com/minimal-json-data-formatter-jsonviewer/
 
+
+
+/**Add css for margin left of the child list*/
 var c = $(".list-group-root").find(".list-group").length;
 var value=15;
 var ss = ".list-group.list-group-root >";
