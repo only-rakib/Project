@@ -2,6 +2,7 @@ function barBtnClick() {
   var x = screen.width; //Screen Width
 
   if (x >= 768) {
+    $("#main_class_adder").toggleClass("design-side-main");
     $("#left_sidebar").toggleClass("d_show");
     $("#left_sidebar").toggleClass("overflow_control");
     $("#side_icon").toggleClass("fa-arrow-circle-left fa-arrow-circle-right");
@@ -12,6 +13,7 @@ function barBtnClick() {
     } else {
       $("#main_page").removeClass("col-md-5");
       $("#main_page").addClass("col-md-8");
+      
     }
     $("#clsbtn").hide();
   } else {
@@ -32,6 +34,7 @@ function closebtn() {
 
 if (screen.width < 768) {
   $("#left_sidebar").removeClass("d_show");
+  $("#remove-sm").removeClass("sticky-top");
   $("#side_icon").removeClass("fa-arrow-circle-left fa-arrow-circle-right");
   $("#side_icon").addClass("fa-arrow-circle-down");
 }

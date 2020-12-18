@@ -19,17 +19,19 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 	-webkit-appearance: none;
 	box-shadow: none !important;
 }
-#left_sidebar {
-  overflow: hidden;
+/*#left_sidebar {
+  
   z-index: 3;
   transition: 0.5s;
   margin-right: 1px solid #ccc;
   
-}
+  
+}*/
 
-#left_sidebar.overflow_control {
+
+/*#left_sidebar.overflow_control {
   overflow-x: auto !important;
-}
+}*/
 
 .d_show {
   display: block !important;
@@ -43,6 +45,9 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 #left_sidebar ul li a{
   font-weight: 600;
   color: #004987;
+}
+#left_sidebar{
+  border-right: 1px solid #ccc;
 }
 
 .block-code {
@@ -65,8 +70,13 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 }
 .design-side
 {
-  padding-left: 1rem;
+  border-right: 1px solid #ccc;
+  
+}
+.design-side-main
+{
   border-left: 1px solid #ccc;
+  padding-left: 1rem;
   min-height: 100vh;
   height: 100%;
 }
@@ -93,7 +103,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 
 #right_sidebar
 {
-  min-height: 100vh;
+  
   padding: 1rem;
 }
 
